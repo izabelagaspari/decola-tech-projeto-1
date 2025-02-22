@@ -25,6 +25,24 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> news;
 
+    public User() {    }
+
+    public List<Feature> getFeatures() {
+        return features;
+    }
+
+    public void setFeatures(List<Feature> features) {
+        this.features = features;
+    }
+
+    public List<News> getNews() {
+        return news;
+    }
+
+    public void setNews(List<News> news) {
+        this.news = news;
+    }
+
     public Long getId() { return id; }
 
     public void setId(Long id) { this.id = id; }

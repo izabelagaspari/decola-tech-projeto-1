@@ -39,4 +39,6 @@ public class Account {
     public void setBalance(BigDecimal balance) { this.balance = balance; }
 
     public void setLimit(BigDecimal limit) { this.limit = limit; }
+
+    public BigDecimal getLimit() {return limit;}
 }
